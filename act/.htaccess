@@ -1,0 +1,13 @@
+
+# HTID:4305366: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:4305366:
+RewriteEngine On
+RewriteRule ^soal index.php?pg=1
+RewriteRule ^update/([a-zA-Z0-9]+)$ update.php?kd=$1&pg=1
+RewriteRule ^tambahsoal add.php?pg=2
+RewriteRule ^user user.php?pg=3
+RewriteRule ^leaderboard lead.php?pg=4
+RewriteRule ^login login.php
+RewriteRule ^logout act/proses_logout.php
+RewriteRule ^getsoal json/getsoal.php
